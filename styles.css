@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+header p{
+    font-size: 1.2rem;
+}
+header nav a{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    
+}
+header nav a:hover{
+    text-shadow: 0 0 8px #0ff, 0 0 12px #0ff, 0 0 16px #0ff ;
+}
+ul{
+    list-style-type: none;
+}
+#about, #portfolio, #contact{
+    padding: 20px;
+    text-align: center;
+    animation: fadeln ls ease-in;
+}
+#about h2, #contact h2{
+    font-size: 1.rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+#portfolio h2{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.project{
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.project:hover{
+    transform: scale(1.05);
+}
+.project img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project h3{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.project p{
+    padding: 0 10px;
+    color: #666;
+}
+.project a{
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+}
+.project a:hover{
+    background-color: #555;
+}
+.project img {
+    transition: filter 0.3s;
+}
+.project:hover img{
+    filter: grayscale(50%);
+}
+@keyframes fadeln{
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+@media (max-width: 768px){
+    .gallery{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project{
+        width: 100%;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.creator-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.creator-photo:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.header-photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#contact a{
+    color: #25d366;
+    text-decoration: none;
+    font-weight: bold;
+}
+#contact a:hover{
+    text-decoration: underline;
+}
+#contact img{
+    width: 5%;
+    height: 10%;
+    
+}
+hr{
+    visibility: hidden;
+}
